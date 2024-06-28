@@ -1,5 +1,5 @@
 //
-//  LiveActivieyWidgetsLiveActivity.swift
+//  ClockRemindWidgetsLiveActivity.swift
 //  LiveActivieyWidgets
 //
 //  Created by 郭瑋 on 2024/6/27.
@@ -9,7 +9,7 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct LiveActivieyWidgetsAttributes: ActivityAttributes {
+struct ClockRemindWidgetsAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var image: String
@@ -21,11 +21,12 @@ struct LiveActivieyWidgetsAttributes: ActivityAttributes {
     var name: String
 }
 
-struct LiveActivieyWidgetsLiveActivity: Widget {
+struct ClockRemindWidgetsLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: LiveActivieyWidgetsAttributes.self) { context in
+        ActivityConfiguration(for: ClockRemindWidgetsAttributes.self) { context in
             // Lock screen/banner UI goes here
             HStack {
+                Spacer().frame(width: 20)
                 VStack {
                     Image("\(context.state.image)").resizable()
                         .aspectRatio(contentMode: .fill)
@@ -37,9 +38,11 @@ struct LiveActivieyWidgetsLiveActivity: Widget {
 
                 }
                 VStack {
-                    Text("目前進入\(context.state.statusText)")
-                    Text("時間還剩餘\(context.state.remainingTime)")
+                    Text("目前進入\(context.state.statusText)").frame(alignment: .leading)
+                    Text("時間還剩餘\(context.state.remainingTime)").frame(alignment: .leading)
                 }
+
+                Spacer()
             }
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
@@ -61,14 +64,17 @@ struct LiveActivieyWidgetsLiveActivity: Widget {
                     Text("\(context.state.statusText)")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("剛進入\(context.state.statusText)狀態，還能持續\(context.state.remainingTime)")
+                    Text("剛進入\(context.state.statusText)狀態，還能持續\n\(context.state.remainingTime)")
                     // more content
                 }
-            } compactLeading: {
-                Text("L")
-            } compactTrailing: {
-                Text("T \(context.state.statusText)")
-            } minimal: {
+            }
+            compactLeading: {
+                Text("目前狀態")
+            }
+            compactTrailing: {
+                Text(context.state.statusText.contains("熱情") ? "燃燒中" : "冷卻中")
+            }
+            minimal: {
                 Text(context.state.statusText)
             }
             .widgetURL(URL(string: "http://www.apple.com"))
@@ -77,28 +83,23 @@ struct LiveActivieyWidgetsLiveActivity: Widget {
     }
 }
 
-extension LiveActivieyWidgetsAttributes {
-    fileprivate static var preview: LiveActivieyWidgetsAttributes {
-//        LiveActivieyWidgetsAttributes(name: "Wild")
-        LiveActivieyWidgetsAttributes(name: "World")
+extension ClockRemindWidgetsAttributes {
+    fileprivate static var preview: ClockRemindWidgetsAttributes {
+        ClockRemindWidgetsAttributes(name: "World")
     }
 }
 
-extension LiveActivieyWidgetsAttributes.ContentState {
-//    fileprivate static var smiley: LiveActivieyWidgetsAttributes.ContentState {
-//        LiveActivieyWidgetsAttributes.ContentState(emoji: "😀")
-//     }
-     
-     fileprivate static var starEyes: LiveActivieyWidgetsAttributes.ContentState {
-         LiveActivieyWidgetsAttributes.ContentState(image: "carb",
+extension ClockRemindWidgetsAttributes.ContentState {
+     fileprivate static var starEyes: ClockRemindWidgetsAttributes.ContentState {
+         ClockRemindWidgetsAttributes.ContentState(image: "carb",
                                                     remainingTime: "05:00",
                                                     statusText: "休息一下")
      }
 }
 
-#Preview("Notification", as: .content, using: LiveActivieyWidgetsAttributes.preview) {
-   LiveActivieyWidgetsLiveActivity()
-} contentStates: {
-//    LiveActivieyWidgetsAttributes.ContentState.smiley
-    LiveActivieyWidgetsAttributes.ContentState.starEyes
-}
+//#Preview("Notification", as: .content, using: ClockRemindWidgetsAttributes.preview) {
+//   ClockRemindWidgetsLiveActivity()
+//} contentStates: {
+////    LiveActivieyWidgetsAttributes.ContentState.smiley
+//    ClockRemindWidgetsAttributes.ContentState.starEyes
+//}

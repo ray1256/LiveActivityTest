@@ -1,6 +1,6 @@
 //
-//  LiveActivieyWidgets.swift
-//  LiveActivieyWidgets
+//  NormalWidgets.swift
+//  NormalWidgets
 //
 //  Created by 郭瑋 on 2024/6/27.
 //
@@ -37,7 +37,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationAppIntent
 }
 
-struct LiveActivieyWidgetsEntryView : View {
+struct NormalWidgetsEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -51,12 +51,12 @@ struct LiveActivieyWidgetsEntryView : View {
     }
 }
 
-struct LiveActivieyWidgets: Widget {
-    let kind: String = "LiveActivieyWidgets"
+struct NormalWidgets: Widget {
+    let kind: String = "NormalWidgets"
 
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-            LiveActivieyWidgetsEntryView(entry: entry)
+            NormalWidgetsEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
     }
@@ -77,7 +77,7 @@ extension ConfigurationAppIntent {
 }
 
 #Preview(as: .systemSmall) {
-    LiveActivieyWidgets()
+    NormalWidgets()
 } timeline: {
     SimpleEntry(date: .now, configuration: .smiley)
     SimpleEntry(date: .now, configuration: .starEyes)

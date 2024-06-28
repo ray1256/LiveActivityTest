@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AC39C12C2D8070006F7335 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9F52C2D6723009AF717 /* CountDownTimer.swift */; };
 		18BBA9C92C2D384A009AF717 /* LiveActiviyTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9C82C2D384A009AF717 /* LiveActiviyTestApp.swift */; };
 		18BBA9CB2C2D384A009AF717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9CA2C2D384A009AF717 /* ContentView.swift */; };
 		18BBA9CD2C2D384C009AF717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BBA9CC2C2D384C009AF717 /* Assets.xcassets */; };
 		18BBA9D02C2D384C009AF717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BBA9CF2C2D384C009AF717 /* Preview Assets.xcassets */; };
 		18BBA9DD2C2D3EB3009AF717 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BBA9DC2C2D3EB3009AF717 /* WidgetKit.framework */; };
 		18BBA9DF2C2D3EB3009AF717 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BBA9DE2C2D3EB3009AF717 /* SwiftUI.framework */; };
-		18BBA9E22C2D3EB3009AF717 /* LiveActivieyWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E12C2D3EB3009AF717 /* LiveActivieyWidgetsBundle.swift */; };
-		18BBA9E42C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E32C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift */; };
-		18BBA9E62C2D3EB3009AF717 /* LiveActivieyWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E52C2D3EB3009AF717 /* LiveActivieyWidgets.swift */; };
+		18BBA9E22C2D3EB3009AF717 /* BothWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E12C2D3EB3009AF717 /* BothWidgetsBundle.swift */; };
+		18BBA9E42C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E32C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift */; };
+		18BBA9E62C2D3EB3009AF717 /* NormalWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E52C2D3EB3009AF717 /* NormalWidgets.swift */; };
 		18BBA9E82C2D3EB3009AF717 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E72C2D3EB3009AF717 /* AppIntent.swift */; };
 		18BBA9EA2C2D3EB5009AF717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BBA9E92C2D3EB5009AF717 /* Assets.xcassets */; };
-		18BBA9EE2C2D3EB5009AF717 /* LiveActivieyWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 18BBA9DA2C2D3EB3009AF717 /* LiveActivieyWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		18BBA9F32C2D4169009AF717 /* LiveActivieyWidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E32C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift */; };
+		18BBA9EE2C2D3EB5009AF717 /* BothWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 18BBA9DA2C2D3EB3009AF717 /* BothWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18BBA9F32C2D4169009AF717 /* ClockRemindWidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9E32C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift */; };
 		18BBA9F42C2D4330009AF717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9CA2C2D384A009AF717 /* ContentView.swift */; };
 		18BBA9F62C2D6723009AF717 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA9F52C2D6723009AF717 /* CountDownTimer.swift */; };
 /* End PBXBuildFile section */
@@ -37,11 +38,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		18BBA9F22C2D3EB5009AF717 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				18BBA9EE2C2D3EB5009AF717 /* LiveActivieyWidgetsExtension.appex in Embed Foundation Extensions */,
+				18BBA9EE2C2D3EB5009AF717 /* BothWidgetsExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,12 +55,12 @@
 		18BBA9CA2C2D384A009AF717 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18BBA9CC2C2D384C009AF717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BBA9CF2C2D384C009AF717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		18BBA9DA2C2D3EB3009AF717 /* LiveActivieyWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveActivieyWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BBA9DA2C2D3EB3009AF717 /* BothWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BothWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BBA9DC2C2D3EB3009AF717 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		18BBA9DE2C2D3EB3009AF717 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		18BBA9E12C2D3EB3009AF717 /* LiveActivieyWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivieyWidgetsBundle.swift; sourceTree = "<group>"; };
-		18BBA9E32C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivieyWidgetsLiveActivity.swift; sourceTree = "<group>"; };
-		18BBA9E52C2D3EB3009AF717 /* LiveActivieyWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivieyWidgets.swift; sourceTree = "<group>"; };
+		18BBA9E12C2D3EB3009AF717 /* BothWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothWidgetsBundle.swift; sourceTree = "<group>"; };
+		18BBA9E32C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockRemindWidgetsLiveActivity.swift; sourceTree = "<group>"; };
+		18BBA9E52C2D3EB3009AF717 /* NormalWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalWidgets.swift; sourceTree = "<group>"; };
 		18BBA9E72C2D3EB3009AF717 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		18BBA9E92C2D3EB5009AF717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BBA9EB2C2D3EB5009AF717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				18BBA9C72C2D384A009AF717 /* LiveActiviyTest */,
-				18BBA9E02C2D3EB3009AF717 /* LiveActivieyWidgets */,
+				18BBA9E02C2D3EB3009AF717 /* BothWidgets */,
 				18BBA9DB2C2D3EB3009AF717 /* Frameworks */,
 				18BBA9C62C2D384A009AF717 /* Products */,
 			);
@@ -100,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				18BBA9C52C2D384A009AF717 /* LiveActiviyTest.app */,
-				18BBA9DA2C2D3EB3009AF717 /* LiveActivieyWidgetsExtension.appex */,
+				18BBA9DA2C2D3EB3009AF717 /* BothWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,17 +135,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18BBA9E02C2D3EB3009AF717 /* LiveActivieyWidgets */ = {
+		18BBA9E02C2D3EB3009AF717 /* BothWidgets */ = {
 			isa = PBXGroup;
 			children = (
-				18BBA9E12C2D3EB3009AF717 /* LiveActivieyWidgetsBundle.swift */,
-				18BBA9E32C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift */,
-				18BBA9E52C2D3EB3009AF717 /* LiveActivieyWidgets.swift */,
+				18BBA9E12C2D3EB3009AF717 /* BothWidgetsBundle.swift */,
+				18BBA9E32C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift */,
+				18BBA9E52C2D3EB3009AF717 /* NormalWidgets.swift */,
 				18BBA9E72C2D3EB3009AF717 /* AppIntent.swift */,
 				18BBA9E92C2D3EB5009AF717 /* Assets.xcassets */,
 				18BBA9EB2C2D3EB5009AF717 /* Info.plist */,
 			);
-			path = LiveActivieyWidgets;
+			path = BothWidgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +170,9 @@
 			productReference = 18BBA9C52C2D384A009AF717 /* LiveActiviyTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18BBA9D92C2D3EB3009AF717 /* LiveActivieyWidgetsExtension */ = {
+		18BBA9D92C2D3EB3009AF717 /* BothWidgetsExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18BBA9EF2C2D3EB5009AF717 /* Build configuration list for PBXNativeTarget "LiveActivieyWidgetsExtension" */;
+			buildConfigurationList = 18BBA9EF2C2D3EB5009AF717 /* Build configuration list for PBXNativeTarget "BothWidgetsExtension" */;
 			buildPhases = (
 				18BBA9D62C2D3EB3009AF717 /* Sources */,
 				18BBA9D72C2D3EB3009AF717 /* Frameworks */,
@@ -181,9 +182,9 @@
 			);
 			dependencies = (
 			);
-			name = LiveActivieyWidgetsExtension;
+			name = BothWidgetsExtension;
 			productName = LiveActivieyWidgetsExtension;
-			productReference = 18BBA9DA2C2D3EB3009AF717 /* LiveActivieyWidgetsExtension.appex */;
+			productReference = 18BBA9DA2C2D3EB3009AF717 /* BothWidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +219,7 @@
 			projectRoot = "";
 			targets = (
 				18BBA9C42C2D384A009AF717 /* LiveActiviyTest */,
-				18BBA9D92C2D3EB3009AF717 /* LiveActivieyWidgetsExtension */,
+				18BBA9D92C2D3EB3009AF717 /* BothWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BBA9F62C2D6723009AF717 /* CountDownTimer.swift in Sources */,
-				18BBA9F32C2D4169009AF717 /* LiveActivieyWidgetsLiveActivity.swift in Sources */,
+				18BBA9F32C2D4169009AF717 /* ClockRemindWidgetsLiveActivity.swift in Sources */,
 				18BBA9CB2C2D384A009AF717 /* ContentView.swift in Sources */,
 				18BBA9C92C2D384A009AF717 /* LiveActiviyTestApp.swift in Sources */,
 			);
@@ -259,11 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BBA9E42C2D3EB3009AF717 /* LiveActivieyWidgetsLiveActivity.swift in Sources */,
+				18BBA9E42C2D3EB3009AF717 /* ClockRemindWidgetsLiveActivity.swift in Sources */,
 				18BBA9F42C2D4330009AF717 /* ContentView.swift in Sources */,
 				18BBA9E82C2D3EB3009AF717 /* AppIntent.swift in Sources */,
-				18BBA9E62C2D3EB3009AF717 /* LiveActivieyWidgets.swift in Sources */,
-				18BBA9E22C2D3EB3009AF717 /* LiveActivieyWidgetsBundle.swift in Sources */,
+				18BBA9E62C2D3EB3009AF717 /* NormalWidgets.swift in Sources */,
+				18BBA9E22C2D3EB3009AF717 /* BothWidgetsBundle.swift in Sources */,
+				18AC39C12C2D8070006F7335 /* CountDownTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +274,7 @@
 /* Begin PBXTargetDependency section */
 		18BBA9ED2C2D3EB5009AF717 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 18BBA9D92C2D3EB3009AF717 /* LiveActivieyWidgetsExtension */;
+			target = 18BBA9D92C2D3EB3009AF717 /* BothWidgetsExtension */;
 			targetProxy = 18BBA9EC2C2D3EB5009AF717 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,6 +449,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,8 +472,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNG69CDUFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveActivieyWidgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveActivieyWidgets;
+				INFOPLIST_FILE = BothWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BothWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,8 +499,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNG69CDUFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveActivieyWidgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveActivieyWidgets;
+				INFOPLIST_FILE = BothWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BothWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18BBA9EF2C2D3EB5009AF717 /* Build configuration list for PBXNativeTarget "LiveActivieyWidgetsExtension" */ = {
+		18BBA9EF2C2D3EB5009AF717 /* Build configuration list for PBXNativeTarget "BothWidgetsExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18BBA9F02C2D3EB5009AF717 /* Debug */,

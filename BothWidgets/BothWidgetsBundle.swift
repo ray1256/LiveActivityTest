@@ -9,9 +9,9 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct LiveActivieyWidgetsBundle: WidgetBundle {
+struct BothWidgetsBundle: WidgetBundle {
     var body: some Widget {
-        LiveActivieyWidgets()
-        LiveActivieyWidgetsLiveActivity()
+        NormalWidgets()
+        ClockRemindWidgetsLiveActivity()
     }
 }
